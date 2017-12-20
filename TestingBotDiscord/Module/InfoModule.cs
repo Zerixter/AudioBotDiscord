@@ -10,14 +10,6 @@ namespace TestingBotDiscord.Module
 {
     public class InfoModule: ModuleBase<SocketCommandContext>
     {
-        [Command("say")]
-        [Summary("Echos a message.")]
-        public async Task SayAsync([Remainder] [Summary("The text to echo")] string echo)
-        {
-            // ReplyAsync is a method on ModuleBase
-            await ReplyAsync(echo);
-        }
-
         [Command("join", RunMode = RunMode.Async)]
         public async Task JoinChannel(IVoiceChannel channel = null)
         {
