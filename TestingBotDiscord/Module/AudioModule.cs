@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace TestingBotDiscord.Module
 {
-    public class InfoModule: ModuleBase<SocketCommandContext>
+    public class AudioModule: ModuleBase<SocketCommandContext>
     {
         [Command("join", RunMode = RunMode.Async)]
         public async Task JoinChannel(IVoiceChannel channel = null)
